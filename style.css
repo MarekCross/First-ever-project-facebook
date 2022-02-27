@@ -1,0 +1,511 @@
+/* font-family: 'Roboto', sans-serif; */
+/* color:#1977f3; */
+* {
+
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+
+
+/* HEADER  */
+header {
+  height: 50px;
+  width: 100%;
+  background-color: #1c1e21;
+  position: relative;
+  min-width: 1070px;
+  float: left;
+  position: fixed;
+  z-index: 2;
+  min-width: 1070px;
+}
+
+body header img {
+  height: 70%;
+  margin: 7px;
+  border-radius: 50%;
+  background-color: #1c1e21;
+}
+
+.searchbar {
+  border: 1px solid black;
+  font-size: 17px;
+  border-radius: 25px;
+  height: 65%;
+  width: 200px;
+  position: absolute;
+  top: 7px;
+  background-image: url("lupa.png");
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: 8px 9px;
+  background-color: #222;
+  padding-left: 30px;
+  color: lightgrey;
+
+}
+
+.icons {
+  position: absolute;
+  left: 38%;
+  top: 8px;
+  width: 50%;
+  background-color: #1c1e21;
+}
+
+.icons button {
+  color: grey;
+  border: none;
+  font-size: 20px;
+
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0 30px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.icons .buttons:hover {
+  background-color: #333;
+  border-radius: 10px;
+}
+
+.icons .buttons:focus {
+  color: royalblue;
+  border-radius: 0px;
+  border-bottom: 3px solid;
+}
+
+
+.profile {
+  border: 0px solid black;
+  font-size: 10px;
+  border-radius: 25px;
+  height: 70%;
+  width: 70px;
+  position: absolute;
+  top: 6px;
+  right: 17%;
+  background-image: url("profil1miniprzezroczysty.png");
+
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 7px 7px;
+  background-color: #222;
+  padding-left: 30px;
+  color: lightgrey;
+  text-transform: uppercase;
+  border-radius: 25px;
+}
+
+.bgc {
+  background-color: #222;
+  height: 300vh;
+  min-width: 1070px;
+}
+
+.messenger {
+  position: absolute;
+  top: 6px;
+  right: 2%;
+  width: 160px;
+  background-color: #1c1e21;
+  margin: 0 auto;
+}
+
+.messenger button {
+
+  border: none;
+  color: white;
+  top: 0;
+  height: 35px;
+  border: 1px solid #2f2f2f;
+  border-radius: 25px;
+  font-size: 15px;
+  background-color: #2f2f2f;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.messenger button:hover {
+  background-color: rgba(125, 125, 125, 0.5);
+}
+
+.messenger button,
+.icons button,
+.searchbar,
+body header img,
+.profile {
+  cursor: pointer;
+}
+
+/* menu boczne */
+aside {
+  min-width: 220px;
+  z-index: 0;
+  width: 25%;
+  background-color: #1c1e21;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 40px 20px 0 20px;
+  position: fixed;
+}
+
+
+.nav2 p {
+  color: #666;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+.nav1 ul li,
+.nav2 ul li {
+  padding: 10px;
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav1 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 30px;
+  border-bottom: #666 solid 2px;
+}
+
+.nav1 ul li a,
+.nav2 ul li a {
+  color: aliceblue;
+  font-size: 17px;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.nav1 ul li a:hover,
+.nav2 ul li a:hover {
+  background-color: #333;
+  border-radius: 10px;
+}
+
+.nav1 ul li a i,
+.nav2 ul li a i {
+  color: #1977f3;
+  padding: 10px;
+  font-size: 23px;
+}
+
+.nav1 ul li:last-child a i,
+.nav2 ul li:last-child a i {
+  color: #666;
+}
+
+aside div p {
+  color: #666;
+  display: block;
+  margin-top: 35px;
+  font-size: 12px;
+}
+
+/* MAIN SRODKOWY PANEL */
+main {
+  min-width: 710px;
+  margin-left: 25%;
+  width: 50%;
+  height: 200vh;
+  background-color: rgb(28, 30, 33);
+  float: left;
+  font-size: 0;
+  margin-top: 50px;
+}
+
+/* STORY */
+main .story {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+main .story .photo {
+  margin: 5px;
+  display: inline-block;
+  height: 280px;
+  background-color: #555;
+  width: 23%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+main .story .photo:nth-child(1) {
+  background-image: url(profil1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+}
+
+main .story .photo:nth-child(2) {
+  background-image: url(story1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  margin-left: 25.5%;
+}
+
+main .story .photo:nth-child(3) {
+  background-image: url(story2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  margin-left: 50%;
+}
+
+main .story .photo:nth-child(4) {
+  background-image: url(story3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  margin-left: 75%;
+}
+
+main .story .photo:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+main .story .photo:first-child p {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  font-size: 20px;
+  color: aliceblue;
+  margin: 235px 0px 0 0px;
+  border-radius: 10px;
+  line-height: 50px;
+  background-color: rgba(30, 30, 30, 0.5);
+}
+
+main .story .photo p {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  font-size: 20px;
+  color: aliceblue;
+  margin: 190px 0px 0 0px;
+  border-radius: 10px;
+  line-height: 50px;
+  background-color: rgba(30, 30, 30, 0.5);
+}
+
+main .story .photo:nth-child(1) i {
+  position: absolute;
+  font-size: 35px;
+  top: 73%;
+  left: 35%;
+  color: white;
+}
+
+main .story .photo i {
+  font-size: 35px;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: #1977f3;
+}
+
+/* POST */
+main .post {
+  width: 80%;
+  height: 140px;
+  background-color: #242526;
+  margin: 300px auto 0 auto;
+  border-radius: 10px;
+}
+
+.post div {
+  border-bottom: #1c1e21 solid 2px;
+  width: 100%;
+}
+
+.post div a img {
+  height: 40px;
+  width: 40px;
+  margin-bottom: 20px;
+  margin-top: 13px;
+  margin-left: 20px;
+  border-radius: 25px;
+}
+
+.post div input {
+  width: 45%;
+  height: 40px;
+  margin-top: 356px;
+  margin-left: 20px;
+  max-width: 600px;
+  background-position: 8px 12px;
+}
+
+.post nav {
+  width: 95%;
+  height: 60px;
+  margin: 8px auto 0 auto;
+}
+
+.post nav li {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 33%;
+  height: 50px;
+  line-height: 45px;
+  margin: 0 auto;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.post nav li:hover {
+  background-color: rgba(75, 75, 75, 0.5);
+  cursor: pointer;
+}
+
+.post nav li a {
+  display: block;
+  margin: 0 auto;
+  font-size: 16px;
+  text-decoration: none;
+  color: #999;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+
+}
+
+.post nav li a i {
+  padding: 0 10px 0 0;
+  font-size: 19px;
+}
+
+.post nav li:first-child a i {
+  color: red;
+}
+
+.post nav li:nth-child(2) a i {
+  color: rgb(31, 194, 31);
+}
+
+.post nav li:nth-child(3) a i {
+  color: rgb(245, 211, 18);
+}
+
+/* main chat przywitaj się */
+
+main .chat {
+  width: 80%;
+  height: 70px;
+  background-color: #242526;
+  margin: 20px auto 0 auto;
+  border-radius: 10px;
+}
+
+main .chat button {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #1977f3;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 14px;
+  margin-left: 25px;
+  border: #76a6e4 solid 1px;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+main .chat button:hover {
+  background-color: rgba(121, 121, 121, 0.5);
+  ;
+}
+
+main .chat button i {
+  padding: 0px 10px 0 0;
+  font-size: 20px;
+  color: #1977f3;
+
+}
+
+main .chat div {
+  overflow: hidden;
+  max-height: 40px;
+  margin-top: -43px;
+  margin-left: 200px;
+}
+
+main .chat div i {
+  font-size: 40px;
+  color: rgba(75, 75, 75, 0.5);
+  padding: 0 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+main .chat div i:hover {
+  color: rgba(121, 121, 121, 0.5);
+}
+
+/* WALL */
+main .wall {
+  width: 80%;
+  height: 700px;
+  background-color: #242526;
+  margin: 20px auto 0 auto;
+  border-radius: 10px;
+}
+
+.wall .info {
+  height: 40px;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  border-radius: 10px;
+  background-image: url(profil1miniprzezroczysty.png);
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  background-position: 2% 40%;
+  padding: 19px;
+
+}
+
+.wall .info p {
+  margin-left: 55px;
+  margin-top: 0px;
+
+}
+
+.wall .info .imie,
+  {
+  font-weight: 700;
+}
+
+.wall .info .time {
+  color: #555;
+  font-size: 12px;
+}
+
+.wall .text {
+  font-size: 18px;
+  width: 92%;
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+  color: #e4e6eb;
+}
