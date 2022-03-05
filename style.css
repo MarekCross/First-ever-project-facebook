@@ -1,10 +1,12 @@
 /* font-family: 'Roboto', sans-serif; */
 /* color:#1977f3; */
+
 * {
 
   margin: 0;
   padding: 0;
   border: none;
+  font-family: helvetica;
 }
 
 .clearfix::after {
@@ -106,7 +108,7 @@ body header img {
 }
 
 .bgc {
-  background-color: #222;
+  background-color: rgb(28, 30, 33);
   height: 300vh;
   min-width: 1070px;
 }
@@ -464,7 +466,7 @@ main .chat div i:hover {
 /* WALL */
 main .wall {
   width: 80%;
-  height: 700px;
+  height: auto;
   background-color: #242526;
   margin: 20px auto 0 auto;
   border-radius: 10px;
@@ -476,7 +478,7 @@ main .wall {
   margin: 0 auto;
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
-  color: white;
+  color: #e4e6eb;
   border-radius: 10px;
   background-image: url(profil1miniprzezroczysty.png);
   background-size: 50px 50px;
@@ -486,18 +488,36 @@ main .wall {
 
 }
 
-.wall .info p {
+.info1 {
+  background-image: url(elon2profil.png);
+  height: 40px;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: #e4e6eb;
+  border-radius: 10px;
+
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  background-position: 2% 40%;
+  padding: 19px;
+}
+
+.wall .info p,
+.wall .info1 p {
   margin-left: 55px;
   margin-top: 0px;
 
 }
 
 .wall .info .imie,
-  {
+.wall .info1 .imie {
   font-weight: 700;
 }
 
-.wall .info .time {
+.wall .info .time,
+.wall .info1 .time {
   color: #555;
   font-size: 12px;
 }
@@ -508,4 +528,137 @@ main .wall {
   font-family: 'Roboto', sans-serif;
   margin: 0 auto;
   color: #e4e6eb;
+}
+
+.wall .photo img {
+  display: block;
+  width: 91.5%;
+  margin: 10px auto 10px auto;
+  border-radius: 10px;
+}
+
+.wall .like {
+  height: 30px;
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  border-bottom: #555 solid 2px;
+  font-size: 18px;
+  color: #797979;
+  font-family: helvetica;
+}
+
+.wall .like div {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.wall .like div p i {
+  color: #1977f3;
+}
+
+.wall .like div:nth-child(2) {
+  margin-left: 63%;
+}
+
+/* @media (min-width: 1024px) and (max-width: 1900px) {
+  .wall .like div:nth-child(2) {
+    margin-left: 40%;
+  }
+} */
+
+.wall .likebutton {
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  font-size: 16px;
+  color: #797979;
+
+}
+
+.wall .likebutton p {
+  height: 40px;
+  display: inline-block;
+  width: 32%;
+  text-align: center;
+  margin-top: 5px;
+  border-radius: 10px;
+  line-height: 40px;
+  transition: 0.3s;
+}
+
+.wall .likebutton p:hover {
+  background-color: rgba(102, 102, 102, 0.322);
+  cursor: pointer;
+}
+
+.wall .likebutton p:nth-child(1):hover {
+  background-color: rgba(102, 102, 102, 0.322);
+  cursor: pointer;
+  color: #1977f3;
+}
+
+/* rightsidebar */
+.rightsidebar {
+  min-width: 220px;
+  z-index: 0;
+  width: 23%;
+  background-color: rgb(28, 30, 33);
+  height: 100vh;
+  right: 0;
+  box-sizing: border-box;
+  position: fixed;
+
+  color: #B0B3B8;
+  margin: 50px auto 0 auto;
+}
+
+.rightsidebar p {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 2px solid grey;
+  cursor: pointer;
+
+}
+
+.rightsidebar p:hover {
+  background-color: rgba(85, 85, 85, 0.226);
+
+}
+
+.rightsidebar .contacts i {
+  padding: 0 5px;
+}
+
+.rightsidebar .contacts i:nth-child(1) {
+  margin-left: 65%;
+}
+
+.rightsidebar .pages i {
+  margin-left: 72%
+}
+
+.contact_profiles {
+  background-color: rgb(28, 30, 33);
+  height: 50px;
+  position: relative;
+  border: none;
+}
+
+.contact_profiles img {
+  height: 35px;
+  width: 35px;
+  padding: 8px 0 8px 8px;
+  position: absolute;
+
+}
+
+.contact_profiles p {
+  font-size: 20px;
+  color: #e4e6eb;
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  padding-left: 60px;
 }
